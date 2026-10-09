@@ -1,0 +1,10 @@
+
+services:
+  - type: web
+    name: pdf-ocr-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: API_KEY
+        generateValue: true
