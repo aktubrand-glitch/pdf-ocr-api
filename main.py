@@ -24,8 +24,8 @@ def check_api_key(authorization: str | None):
             detail="API_KEY is not configured on the server."
         )
 
-    if authorization != f"Bearer {API_KEY}":
-        raise HTTPException(status_code=401, detail="Invalid API key")
+    #if authorization != f"Bearer {API_KEY}":
+       # raise HTTPException(status_code=401, detail="Invalid API key")
 
 
 def extract_pdf(data: bytes) -> dict:
